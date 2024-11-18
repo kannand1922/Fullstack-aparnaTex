@@ -5,7 +5,7 @@ const MapComponent = () => {
 
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAdvrPiFTHPjYFYtioxQ-4WENnMznKeb9g&libraries=places`;
+    script.src = ``;
     script.onload = initMap;
     document.head.appendChild(script);
 
