@@ -1,0 +1,21 @@
+# Ignore node_modules and log files for both client and server
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Ignore environment variable files
+.env
+
+# Ignore IDE/editor specific files
+*.idea
+*.vscode
+*.swp
+
+# Ignore specific folders for React (client)
+/client/node_modules
+/client/build
+/client/.env
+
+# Ignore specific folders for Node.js/Express (server)
+/server/node_modules
+/server/.env

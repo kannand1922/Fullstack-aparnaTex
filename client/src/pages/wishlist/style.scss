@@ -1,0 +1,51 @@
+.wishlist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding: 2rem;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+
+  h2 {
+    margin-bottom: 2rem;
+    color: #1e90ff; // Adjust color to match your theme
+  }
+
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+
+  .wishlist-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    max-width: 1200px;
+
+    .wishlist-card {
+      width: 100%;
+      max-width: 345px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    .card-media {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .checkout-button {
+      margin-top: 2rem;
+    }
+  }
+
+  .wishlist-items p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+}

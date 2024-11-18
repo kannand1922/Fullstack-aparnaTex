@@ -1,0 +1,92 @@
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9; // light background for contrast
+}
+
+.product-details-box {
+  max-width: 500px; // limit width for better readability
+  width: 100%;
+  margin-top: 30px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-media {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.product-content {
+  padding: 20px;
+}
+
+.product-price,
+.product-count,
+.product-cart-count {
+  margin: 10px 0;
+}
+.product-options {
+  display: flex;
+  justify-content: space-between; // space out color and size options
+  margin: 20px 0; // spacing above and below the options
+}
+
+.product-color,
+.product-size {
+  flex: 0.2; // each option takes equal space
+  margin-right: 20px; // spacing between color and size options
+  position: relative; // for positioning the color preview
+}
+
+.product-color:last-child,
+.product-size:last-child {
+  margin-right: 0; // remove margin from the last element
+}
+
+.option-label {
+  font-weight: bold; // bold text for option labels
+  margin-bottom: 5px; // space below the label
+  display: block; // ensures the label takes a new line
+  color: #333; // dark gray for better readability
+}
+
+.color-select,
+.size-select {
+  width: 100%; // full width for selects
+  padding: 10px; // padding for better touch targets
+  border: 1px solid #ccc; // light border
+  border-radius: 4px; // rounded corners
+  background-color: #fff; // white background
+  font-size: 16px; // increase font size for readability
+  transition: border-color 0.3s; // smooth transition on focus
+  cursor: pointer; // pointer cursor on hover
+
+  &:focus {
+    border-color: #1E90FF; // highlight border on focus
+    outline: none; // remove default outline
+  }
+}
+
+.color-preview {
+  width: 30px; // fixed width for color preview
+  height: 30px; // fixed height for color preview
+  border: 1px solid #ccc; // border for visibility
+  border-radius: 4px; // rounded corners
+  position: absolute; // position preview next to select
+  top: 35px; // adjust based on label height
+  left: calc(100% + 10px); // space between select and preview
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // subtle shadow for depth
+}
+
+.product-actions {
+  justify-content: space-between; // aligns buttons nicely
+  padding: 20px;
+  border-top: 1px solid #eee;
+}

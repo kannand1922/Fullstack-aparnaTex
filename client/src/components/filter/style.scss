@@ -1,0 +1,57 @@
+// Filter section container
+.filter-section {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 280px;  // Adjust as needed
+    margin: 20px auto;
+  }
+  
+  // Header of filter section
+  .filter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  
+  .filter-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+  }
+  
+  .filter-icon, .clear-filter {
+    color: #1e90ff;
+  }
+  
+  // Clear filter button
+  .clear-filter {
+    font-size: 20px;
+  }
+  
+  // Filter body section
+  .filter-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  // Form control for filters
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  // MUI components full width adjustment
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  
+  // Input label adjustment
+  .MuiInputLabel-root {
+    color: #555;
+  }
+  
